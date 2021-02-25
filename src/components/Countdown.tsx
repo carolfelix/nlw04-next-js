@@ -2,6 +2,7 @@ import { useState, useEffect, useContext } from 'react';
 import { isCallChain } from 'typescript';
 import { ChallengesContext } from '../contexts/ChallengesContext';
 import { CountdownContext } from '../contexts/CountdownContext';
+import { FaCheckCircle } from 'react-icons/fa'
 import styles from '../styles/components/Countdown.module.css'
 
 export function Countdown(){
@@ -41,6 +42,7 @@ export function Countdown(){
                     className={styles.countdownButton }
                 >
                     Ciclo encerrado
+                    <FaCheckCircle className={styles.checkCircle}/>
                 </button>
             ) : (
                 <>

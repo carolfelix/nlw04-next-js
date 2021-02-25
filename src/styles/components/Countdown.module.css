@@ -68,5 +68,10 @@
     background: var(--white);
     color: var(--text);
     cursor: not-allowed;
-    border-bottom: 4px solid green;
+    border-bottom: 4px solid var(--green);
+}
+
+.checkCircle{
+    color: var(--green);
+    margin-left: 1rem;
 }
