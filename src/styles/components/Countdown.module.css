@@ -52,7 +52,7 @@
     transition: background-color 0.2s;
 }
 .countdownButton:not(:disabled):hover{
-    background: var(--blue-dark);
+    background: var(--red);
 }
 .countdownButtonIsActive{
     background: var(--white);
