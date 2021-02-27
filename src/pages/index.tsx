@@ -14,10 +14,10 @@ import React from 'react'
 
 interface HomeProps {
   level: number;
-  currentExperience:number;
-  challengesCompleted:number;
+  currentExperience: number;
+  challengesCompleted: number;
 }
-export default function Home(props : HomeProps) {
+export default function Home(props: HomeProps) {
 
   return (
     <ChallengesProvider
@@ -29,7 +29,9 @@ export default function Home(props : HomeProps) {
         <Head>
           <title>Inicio | move.it</title>
         </Head>
-
+        <div className={styles.logo}>
+          <img src="/logo-moveit.svg" alt="" />
+        </div>
         <ExperienceBar />
 
         <CountdownProvider>
@@ -59,9 +61,9 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 
   return {
     props: {
-      level:Number(level),
-      currentExperience:Number(currentExperience),
-      challengesCompleted:Number(challengesCompleted)
+      level: Number(level),
+      currentExperience: Number(currentExperience),
+      challengesCompleted: Number(challengesCompleted)
     }
   }
 }
